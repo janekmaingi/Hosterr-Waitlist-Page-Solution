@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hosterr</title>
+    <meta
+      name="description"
+      content="A simple HTML5 Template for new projects."
+    />
+    <meta name="author" content="SitePoint" />
+
+    <script
+      src="https://kit.fontawesome.com/3a878620d3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <nav class="container">
+        <div class="navbar">
+          <ul>
+            <li><img src="images/Logo.svg" alt="logo" /></li>
+
+            <li><a class="hiringbutton">Hosterr is Hiring!</a></li>
+          </ul>
+        </div>
+
+        <div class="navbar nav-links" id="navLinks">
+          <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">Plans</a></li>
+            <li><a href="">Find Domains</a></li>
+            <li><a href="">Why Hosterr</a></li>
+          </ul>
+        </div>
+        <div class="navbar2">
+          <ul>
+            <li><a href="">Sign in</a></li>
+            <li><a class="signInbutton" href="">Join Waitlist</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="content container">
+        <div class="maincontent">
+          <h1>Host your website in less than 5 minutes.</h1>
+          <p>
+            With Hosterr, get your website up and running in less than 5 minutes
+            with the most competive pricing package available online.
+          </p>
+          <form>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              value="Enter e-mail address"
+            />
+            <input type="button" value="Join Waitlist" class="signInbutton" />
+          </form>
+
+          <p class="">
+            <img
+              src="images/Checkmark.svg"
+              alt="checkmark"
+              class="checkmark"
+            />No spam, ever. Unsubscribe anytime.
+          </p>
+        </div>
+        <div class="avatarcontainer">
+          <img src="images/Blue Shape.svg" alt="" class="blueshape" />
+          <img src="images/Pink Shape.svg" alt="" class="pinkshape" />
+          <img src="images/Purple Shape.svg" alt="" class="purpleshape" />
+          <img src="images/Hero Image (Model).png" alt="" class="model" />
+        </div>
+      </div>
+      <footer class="container">
+        <div class="socialmedia">
+          <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="contactus">
+          <p>
+            <img src="images/Help Avatar.svg" alt="" class="helpavatar" />Have
+            any questions?<span>Talk to a specialist</span>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

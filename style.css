@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", serif;
+  background-color: #f8f4e8;
+  color: rgb(108, 94, 94);
+  margin: 0;
+  padding: 0;
+}
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.nav-links {
+  position: relative;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+li {
+  float: left;
+}
+nav ul li a {
+  display: inline-block;
+  color: rgb(108, 94, 94);
+  font-weight: 500;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+}
+
+a:hover {
+  color: black;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+.hiringbutton {
+  background-image: linear-gradient(to right, orange, red);
+  padding: 5px;
+  margin-left: 16px;
+  color: white;
+  border-radius: 15px;
+  font-size: 13px;
+  opacity: 0.9;
+}
+.signInbutton {
+  background-color: #4877ed;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 24px;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links ul li {
+    display: block;
+  }
+  .navbar2 {
+    display: none;
+  }
+  .nav-links {
+    position: fixed;
+    background-color: #f8f4e8;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa-solid {
+    float: right;
+    display: block;
+    color: black;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 10px;
+  }
+}
+
+.content {
+  margin: 100px 0;
+}
+
+h1 {
+  color: black;
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+}
+input[type="text"] {
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  color: rgb(124, 116, 116);
+  padding: 16px 24px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.checkmark {
+  float: left;
+  margin-right: 10px;
+  vertical-align: top;
+}
+.checkmarkparagraph::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.maincontent {
+  width: 45%;
+  height: auto;
+}
+
+.maincontent p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.avatarcontainer {
+  position: relative;
+  width: 33.33%;
+  height: auto;
+}
+.blueshape {
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  max-width: 100%;
+  height: auto;
+
+  transform: rotate(-60deg);
+}
+.pinkshape {
+  position: absolute;
+  z-index: 2;
+  max-width: 100%;
+  height: auto;
+
+  top: 0;
+  right: 0;
+  transform: rotate(-40deg);
+}
+
+.purpleshape {
+  position: absolute;
+  z-index: 3;
+  max-width: 100%;
+  height: auto;
+
+  top: 0;
+  right: 0;
+  transform: rotate(-20deg);
+}
+
+.model {
+  position: absolute;
+  z-index: 4;
+  max-width: 100%;
+  height: auto;
+
+  top: 0;
+  right: 0;
+}
+.avatarcontainer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*---Footer---*/
+.socialmedia ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+
+.socialmedia ul li a {
+  display: inline-block;
+  margin-right: 16px;
+  color: rgb(108, 94, 94);
+  text-decoration: none;
+}
+
+.contactus > p {
+  color: black;
+  line-height: 1.2;
+
+  overflow: auto;
+}
+
+footer span {
+  display: block;
+  font-weight: bold;
+}
+
+.helpavatar {
+  float: left;
+  margin-right: 14px;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    width: 90%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+  .avatarcontainer {
+    width: 50%;
+    margin: 0 auto;
+    height: auto;
+  }
+  .maincontent {
+    width: 100%;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+    margin-bottom: 60px;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    margin: 50px 0 20px;
+  }
+  input[type="text"] {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .maincontent .signInbutton {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .socialmedia,
+  .contactus {
+    width: 100%;
+  }
+
+  .socialmedia {
+    margin-bottom: 20px;
+  }
+}
